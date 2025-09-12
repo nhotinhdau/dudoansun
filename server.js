@@ -66,7 +66,7 @@ function predictNext(history, cau) {
 }
 
 // --- ENDPOINT DỰ ĐOÁN ---
-app.get('/api/taixiu/du_doan_68gb', async (req,res)=>{
+app.get('/api/2k15', async (req,res)=>{
   try{
     const response = await axios.get(HISTORY_API_URL);
     const data = Array.isArray(response.data)?response.data:[response.data];
@@ -94,7 +94,7 @@ app.get('/api/taixiu/du_doan_68gb', async (req,res)=>{
       phien_sau: nextSession,
       du_doan,
       do_tin_cay: cachedConfidence,
-      giai_thich: "trần bình an đẹp trai"
+      giai_thich: "chs chùa à dm"
     });
 
   }catch(err){
@@ -114,4 +114,5 @@ app.get('/',(req,res)=>{
 });
 
 app.listen(PORT,()=>console.log(`Server đang chạy trên cổng ${PORT}`));
+
 
