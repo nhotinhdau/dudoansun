@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // --- CẤU HÌNH ---
-const HISTORY_API_URL = 'https://ditmetkcrack.onrender.com/api/taixiu/ws';
+const HISTORY_API_URL = 'https://jjjjsa.onrender.com/api/taixiu/ws';
 let cachedConfidence = null;
 let cachedSession = null;
 
@@ -114,3 +114,4 @@ app.get('/',(req,res)=>{
 });
 
 app.listen(PORT,()=>console.log(`Server đang chạy trên cổng ${PORT}`));
+
