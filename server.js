@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // --- CẤU HÌNH ---
-const HISTORY_API_URL = 'https://hyag.onrender.com/api/taixiu';
+const HISTORY_API_URL = 'https://lichsusun-production.up.railway.app/api/taixiu';
 let cachedConfidence = null;
 let cachedSession = null;
 
@@ -114,6 +114,7 @@ app.get('/',(req,res)=>{
 });
 
 app.listen(PORT,()=>console.log(`Server đang chạy trên cổng ${PORT}`));
+
 
 
 
