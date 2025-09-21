@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // --- CẤU HÌNH ---
-const HISTORY_API_URL = 'https://phc-ll5n.onrender.com/api/taixiu';
+const HISTORY_API_URL = 'https://jbvbab.onrender.com/api/taixiu';
 let cachedConfidence = null;
 let cachedSession = null;
 
@@ -163,3 +163,4 @@ app.get('/',(req,res)=>{
 
 app.listen(PORT,()=>console.log(`Server đang chạy trên cổng ${PORT}`));
   
+
